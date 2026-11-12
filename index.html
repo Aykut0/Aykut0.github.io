@@ -1166,10 +1166,12 @@ const PORTFOLIO = {
       img: "assets/projects/cgm.jpg",
       stage: "Prototype built",
       subtitle: "My own buildable version of a commercial glucose monitor.",
-      meta: "Bio-Integrated Microdevices Lab · hardware",
-      desc: "Continuous glucose monitors read sugar levels through a fine sensor under the skin. I took a commercial one apart to understand how its electronics read the sensor, then redesigned it as my own round circuit board, the starting point for the lab's next-generation glucose sensors. The board was made, assembled and paired with a flexible sensor probe.",
+      meta: "Reverse engineering · PCB design",
+      desc: "Continuous glucose monitors read sugar levels through a fine sensor under the skin. I took a commercial one apart to understand how its electronics read the sensor, then redesigned it as my own round circuit board that can be built and changed freely, a base for trying new glucose sensors. The board was made, assembled and paired with a flexible sensor probe.",
       tags: ["Glucose", "Reverse Engineering", "PCB"],
       groups: ["medical", "hardware"],
+      link: "https://github.com/Aykut0/cgm-reverse-engineering",
+      linkLabel: "View on GitHub",
     },
     {
       title: "Ultrasonic Theremin",
@@ -1183,6 +1185,8 @@ const PORTFOLIO = {
       desc: "Two ultrasonic sensors measure how far each hand is from the instrument. One distance sets the pitch and the other the volume, so music is played without touching anything. I took it from proposal to firmware and a working demo, and filed an invention disclosure for it. The large picture is a 3D-printable enclosure I later designed for it in Blender; the small photo is the working prototype.",
       tags: ["Ultrasound", "Embedded", "Music"],
       groups: ["hardware", "signal"],
+      link: "https://github.com/Aykut0/ultrasonic-theremin",
+      linkLabel: "View on GitHub",
     },
     {
       title: "Pocket Oscilloscope",
@@ -1193,6 +1197,8 @@ const PORTFOLIO = {
       desc: "An oscilloscope shows you what an electrical signal is doing. I designed this board to fit the essentials into a pocket: a protected input stage, a chip that digitizes the signal and sends it to a computer or phone, and a rechargeable battery, all on one small board instead of a lab bench.",
       tags: ["PCB", "Instrumentation", "Embedded"],
       groups: ["hardware"],
+      link: "https://github.com/Aykut0/pocket-oscilloscope",
+      linkLabel: "View on GitHub",
     },
     {
       title: "HEX Color Board",
@@ -1206,6 +1212,8 @@ const PORTFOLIO = {
       desc: "Made for a graphic-designer friend. Pick a color on the board to see its HEX code, type a code to see the color, or point the color sensor on the back at anything around you to capture it. I designed the board and made it in the lab with a laser PCB machine. The large picture is a 3D model of the snap-fit case I designed around it; the small image is the board layout.",
       tags: ["PCB", "Color Sensing", "Embedded"],
       groups: ["hardware"],
+      link: "https://github.com/Aykut0/hex-color-board",
+      linkLabel: "View on GitHub",
     },
     {
       title: "Cuffless Blood Pressure",
@@ -1215,6 +1223,8 @@ const PORTFOLIO = {
       desc: "An experimental algorithm built to learn the idea behind cuffless blood pressure. When pressure rises, the pulse travels faster from the heart to the fingertip. The algorithm measures that travel time from a heart trace and an optical finger pulse, turns it into a pressure estimate, and compares it with a direct arterial measurement on public intensive-care recordings.",
       tags: ["Blood Pressure", "ECG + PPG", "Python"],
       groups: ["medical", "signal"],
+      link: "https://github.com/Aykut0/cuffless-bp-ptt",
+      linkLabel: "View on GitHub",
     },
     {
       title: "ECG Heart-Attack Classification",
@@ -1225,6 +1235,8 @@ const PORTFOLIO = {
       desc: "We took ECG recordings from healthy people and from patients with a past heart attack, measured the features a cardiologist looks for in each beat, and trained a classifier to tell the two groups apart.",
       tags: ["ECG", "Machine Learning", "MATLAB"],
       groups: ["medical", "signal"],
+      link: "https://github.com/Aykut0/ecg-mi-classification",
+      linkLabel: "View on GitHub",
     },
     {
       title: "ECG Heartbeat Detection",
@@ -1234,6 +1246,8 @@ const PORTFOLIO = {
       desc: "A training project on the first step of almost any ECG analysis: finding each heartbeat. I built the well-known Pan-Tompkins detector stage by stage instead of using a library, ran it on a noisy real recording, and compared its detections with the beat labels cardiologists made on the same data.",
       tags: ["ECG", "Algorithms", "Python"],
       groups: ["medical", "signal"],
+      link: "https://github.com/Aykut0/ecg-qrs-detection",
+      linkLabel: "View on GitHub",
     },
     {
       title: "Vital Signs from Light",
@@ -1243,6 +1257,8 @@ const PORTFOLIO = {
       desc: "A training project in biosignal processing. The light sensor in a smartwatch or pulse oximeter sees each heartbeat as a small pulse. The pipeline cleans that signal and reads three vital signs from it: heart rate, its beat-to-beat variability, and breathing rate, which shows up as a slow rise and fall in pulse height.",
       tags: ["PPG", "Vital Signs", "Python"],
       groups: ["medical", "signal"],
+      link: "https://github.com/Aykut0/ppg-vitals",
+      linkLabel: "View on GitHub",
     },
     {
       title: "Echoes to Artery-Wall Motion",
@@ -1252,6 +1268,8 @@ const PORTFOLIO = {
       desc: "An experimental project to practice the processing behind FIWUS. Raw ultrasound from an artery is not publicly available, so I simulated it, then ran the processing chain on it: turning echoes into an image over time, tracking both artery walls, and reading out how the artery widens with each beat.",
       tags: ["Ultrasound", "Imaging", "MATLAB"],
       groups: ["medical", "signal"],
+      link: "https://github.com/Aykut0/ultrasound-mmode-wall-tracking",
+      linkLabel: "View on GitHub",
     },
     {
       title: "AM Radio Transmitter",
@@ -1262,6 +1280,8 @@ const PORTFOLIO = {
       desc: "This circuit places an audio signal onto a radio carrier wave, the way AM radio works. I designed it from individual components, simulated each stage, and compared the waveforms with what theory predicts.",
       tags: ["Analog", "RF", "Simulation"],
       groups: ["hardware"],
+      link: "https://github.com/Aykut0/am-radio-transmitter",
+      linkLabel: "View on GitHub",
     },
     {
       title: "NMOS Layout & Model",
@@ -1271,6 +1291,8 @@ const PORTFOLIO = {
       desc: "A small training project in chip design. Chips are drawn as stacked layers of material; I drew a transistor's layout by hand in an open-source chip editor, then wrote a simple model of the same device that reproduces how its current responds to voltage.",
       tags: ["Chip Design", "Layout", "Python"],
       groups: ["hardware"],
+      link: "https://github.com/Aykut0/nmos-layout-model",
+      linkLabel: "View on GitHub",
     },
   ],
 
